@@ -1,27 +1,22 @@
-* {
+/* * {
     font-family: monospace;
-}
+} */
 
 body {
     font-size: 20px; /* this property will be inherited */
-    border: 2px solid black; /* this one won't */
-}
-
-h1, h2 {
-    color: blue;
-}
-
-p {
-    color: purple;
+    border: 1px solid bisque; /* this one won't */
+    background-color: #25291C;
+    color: bisque;
+    padding: 5px;
 }
 
 .highlight {
     text-transform: uppercase;
-    background-color: gold;
+    background-color: blueviolet;
 }
 
-.gray {
-    color: gray;
+p {
+    color: lavender;
 }
 
 #second {
