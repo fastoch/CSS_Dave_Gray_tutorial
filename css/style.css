@@ -6,13 +6,20 @@ body {
     font-size: 20px; /* this property will be inherited */
     border: 1px solid bisque; /* this one won't */
     background-color: #25291C;
-    color: bisque;
+    color: #ffe4c4;
     padding: 5px;
 }
 
 .highlight {
     text-transform: uppercase;
     background-color: blueviolet;
+}
+
+.container {
+    border: 1px dashed aliceblue;
+    width: 50%;
+    font-size: 2rem;
+    padding: 0.5em;;
 }
 
 p {
