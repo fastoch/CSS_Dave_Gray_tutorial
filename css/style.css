@@ -1,8 +1,15 @@
 body {
     font-size: 1.2rem;
+    font-family:'Courier New', Courier, monospace;
     background-color: #25291C;
     color: #ffe4c4;
-    padding: 5% 10%;
+    padding: 2%;
+}
+
+h1 {
+    border: 3px dashed rgba(255, 225, 0, 0.8);
+    padding: 0.2em;
+    text-align: center;
 }
 
 input, button {
@@ -18,26 +25,19 @@ input, button {
     text-decoration: line-through;
 }
 
+.bee {
+    display: block;
+    margin: 5% auto;
+}
+
 .center {
     text-align: center;
 }
 
 .container {
-    border: 1px dashed aliceblue;
     width: 50%;
-    padding: 0.5em;;
-    margin: 1em 2em 2em; /* 1em on the top, 2em on the right & left, 2em on the bottom */
-    outline: 3px solid purple;
-    outline-offset: 4px;
-}
-
-.circle {
-    background-color: gold;
-    width: 100px;
-    height: 100px;
-    border: 2px solid white;
-    border-radius: 50px; /* set this to half the value of the width and height */
-    margin: 2rem auto; /* centers the circle horizontally */
+    padding: 0.2em;;
+    margin: 1em; 
 }
 
 p {
