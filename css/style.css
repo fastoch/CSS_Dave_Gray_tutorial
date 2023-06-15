@@ -1,12 +1,12 @@
-/* * {
-    font-family: monospace;
-} */
-
 body {
-    border: 1px solid bisque; /* this one won't */
+    font-size: 1.2rem;
     background-color: #25291C;
     color: #ffe4c4;
-    padding: 5px;
+    padding: 5% 10%;
+}
+
+input, button {
+    font: inherit;
 }
 
 .highlight {
@@ -14,10 +14,17 @@ body {
     background-color: blueviolet;
 }
 
+.crossed-out {
+    text-decoration: line-through;
+}
+
+.center {
+    text-align: center;
+}
+
 .container {
     border: 1px dashed aliceblue;
     width: 50%;
-    font-size: 1.5rem;
     padding: 0.5em;;
     margin: 1em 2em 2em; /* 1em on the top, 2em on the right & left, 2em on the bottom */
     outline: 3px solid purple;
@@ -35,8 +42,4 @@ body {
 
 p {
     color: lavender;
-}
-
-#second {
-    font-style: italic;
 }
