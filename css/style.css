@@ -12,6 +12,12 @@
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 }
 
+header {
+    width: 100%;
+    text-align: center;
+    margin: 2% auto;
+}
+
 body {
     font-size: 1.2rem;
     font-family:'Courier New', Courier, monospace;
@@ -20,14 +26,20 @@ body {
     padding: 2%;
 }
 
-h1 {
-    border: 3px dashed rgba(255, 225, 0, 0.8);
+h1 span {
+    color: rgb(255, 225, 0);
     padding: 0.1em;
     text-align: center;
 }
 
 input, button {
     font: inherit;
+}
+
+.container {
+    width: 100%;
+    padding: 0.5em;;
+    margin: 0.5em; 
 }
 
 .highlight {
@@ -42,16 +54,7 @@ input, button {
 .bee {
     display: block;
     margin: 5% auto;
-}
-
-.center {
-    text-align: center;
-}
-
-.container {
-    width: 50%;
-    padding: 0.2em;;
-    margin: 0.5em; 
+    width: 10%;
 }
 
 p {

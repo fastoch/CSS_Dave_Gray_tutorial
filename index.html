@@ -10,41 +10,53 @@
     <script src="myscript.js"></script> 
 </head>
 <body>
-    <header class="container">
-        <h1>Welcome to all IT curious!</h1>
-    </header>
+    <header>
+        <!-- Animated Side Navigation - https://www.w3schools.com/howto/howto_js_sidenav.asp -->
+        <nav id="mySidenav" class="sidenav">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span> 
+            <!-- &#9776 is decimal code for trigram for heaven - https://www.w3schools.com/charsets/ref_utf_symbols.asp -->
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <!-- javascript:void(0) means "do nothing - don't reload, don't navigate, do not run any code." -->
+            <a href="#">Programming</a>
+            <a href="#">Networking</a>
+            <a href="#">DevOps</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">GitHub</a>
+            <a href="#">Contact</a>
+        </nav>
+        <!-- End of Animated Side Nav -->
 
-    <!-- Animated Side Navigation - https://www.w3schools.com/howto/howto_js_sidenav.asp -->
-    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span> 
-    <!-- &#9776 is decimal code for trigram for heaven - https://www.w3schools.com/charsets/ref_utf_symbols.asp -->
-    <nav id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <!-- javascript:void(0) means "do nothing - don't reload, don't navigate, do not run any code." -->
-        <a href="#">Programming</a>
-        <a href="#">Networking</a>
-        <a href="#">DevOps</a>
-        <a href="#">LinkedIn</a>
-        <a href="#">GitHub</a>
-        <a href="#">Contact</a>
-    </nav>
-    <!-- End of Animated Side Nav -->
+        <h1><span>---------------</span> Welcome to all IT curious! <span>----------------</span></h1>
+    </header>
 
     <main class="container">
         <article>
-        <h2>Let me introduce myself</h2>
+        <h2>Let me introduce myself!</h2>
             <p>Lorem ipsum <span class="highlight">dolor</span> sit amet consectetur adipisicing elit. Tempore enim recusandae quisquam ipsum eos aliquid eaque nobis cum deserunt, perspiciatis ex facilis non ut molestias! Eos dicta nobis hic asperiores?</p>
         </article>
+        <br>
         <article>
-        <h2>Article 2</h2>
-            <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus dolorum repudiandae explicabo iusto? Doloremque velit consequatur voluptate quaerat minus nesciunt eaque, cum consequuntur perspiciatis animi aperiam corrupti hic blanditiis doloribus?</p>
+        <h2>Why is Arch Linux the best OS?</h2>
+            <p>
+                I reckon that Arch is by far the best Linux distribution, and here's why:
+                <ul>
+                    <li>First of all, the <a href="https://wiki.archlinux.org/" target="_blank">Arch Wiki</a> is a fantastic source of information!</li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </p>
         </article>
-        <img class="bee" src="bee.png" alt="cute bee" width="20%" height="auto">
+        <img class="bee" src="bee.png" alt="cute bee">
         <form>
             <label for="name">Name:</label>
             <input type="text" id="name" placeholder="your name">
             <button>Submit</button>
         </form>
-        <p>Arch Linux is the <span class="crossed-out">worst</span> best distro!</p>
     </main>  
 </body>
 </html>
