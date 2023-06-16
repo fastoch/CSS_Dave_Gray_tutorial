@@ -14,7 +14,6 @@
 
 header {
     width: 100%;
-    text-align: center;
     margin: 2% auto;
 }
 
@@ -26,8 +25,8 @@ body {
     padding: 2%;
 }
 
-h1 span {
-    color: rgb(255, 225, 0);
+h1 {
+    color: #fad6aa;
     padding: 0.1em;
     text-align: center;
 }
