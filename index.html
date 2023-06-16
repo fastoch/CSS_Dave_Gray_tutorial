@@ -7,23 +7,28 @@
     <title>C'est fastoch!</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="bee.png" type="image/x-icon">
+    <script src="myscript.js"></script> 
 </head>
 <body>
     <header class="container">
         <h1>Welcome to all IT curious!</h1>
-        <nav>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </nav>
     </header>
+
+    <!-- Animated Side Navigation - https://www.w3schools.com/howto/howto_js_sidenav.asp -->
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span> 
+    <!-- &#9776 is decimal code for trigram for heaven - https://www.w3schools.com/charsets/ref_utf_symbols.asp -->
+    <nav id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <!-- javascript:void(0) means "do nothing - don't reload, don't navigate, do not run any code." -->
+        <a href="#">Programming</a>
+        <a href="#">Networking</a>
+        <a href="#">DevOps</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">GitHub</a>
+        <a href="#">Contact</a>
+    </nav>
+    <!-- End of Animated Side Nav -->
+
     <main class="container">
         <article>
         <h2>Let me introduce myself</h2>

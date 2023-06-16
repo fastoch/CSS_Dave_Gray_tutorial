@@ -1,3 +1,17 @@
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0; /* Position the side nav menu to the left */
+    background-color: #25291C;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
 body {
     font-size: 1.2rem;
     font-family:'Courier New', Courier, monospace;
@@ -8,7 +22,7 @@ body {
 
 h1 {
     border: 3px dashed rgba(255, 225, 0, 0.8);
-    padding: 0.2em;
+    padding: 0.1em;
     text-align: center;
 }
 
@@ -37,7 +51,7 @@ input, button {
 .container {
     width: 50%;
     padding: 0.2em;;
-    margin: 1em; 
+    margin: 0.5em; 
 }
 
 p {
