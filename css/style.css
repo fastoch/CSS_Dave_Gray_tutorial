@@ -59,3 +59,22 @@ input, button {
 p {
     color: lavender;
 }
+
+a {
+    text-decoration: none; /* remove underline from hyperlinks */
+    color: dodgerblue;
+}
+
+a:visited {
+    color: blueviolet;
+}
+
+a:hover {
+    color: rgb(251, 109, 251); /* apply this color when hovering mouse over hyperlinks */
+}
+
+a:active {
+    color: red;
+}
+
+
