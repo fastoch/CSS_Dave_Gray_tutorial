@@ -12,10 +12,12 @@
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 }
 
-header {
-    width: 100%;
-    margin: 2% auto;
-}
+/* 
+TODO: 
+- finish the side navigation menu - https://www.w3schools.com/howto/howto_js_sidenav.asp
+- make the trigram stay visible at the top left of the screen like the language selector)
+- change the style of the language buttons
+*/
 
 body {
     font-size: 1.2rem;
@@ -25,10 +27,37 @@ body {
     padding: 2%;
 }
 
+header {
+    width: 90%;
+    margin: 0 2% 2% 0;
+}
+
+.trigram {
+    font-size: 1.6em;
+    cursor: pointer;
+    
+}
+
+.language {
+    top: 0;
+    right: 2%;
+    position: fixed;
+    z-index: 1;
+    overflow-x: hidden;
+    margin-top: 0;
+    font-size: 0.8em;
+}
+
+a.language {
+    text-decoration: none;
+    color:#25291C;
+}
+
 h1 {
     color: #fad6aa;
     padding: 0.1em;
     text-align: center;
+    margin-top: 5%;
 }
 
 input, button {
@@ -36,7 +65,7 @@ input, button {
 }
 
 .container {
-    width: 100%;
+    width: 85%;
     padding: 0.5em;;
     margin: 0.5em; 
 }
@@ -61,20 +90,20 @@ p {
 }
 
 a {
-    text-decoration: none; /* remove underline from hyperlinks */
+    text-decoration: none; /* remove the default underline from hyperlinks */
     color: #67d6ff;
 }
 
 a:visited {
-    color: #9e36ff;
+    color: #9e36ff; 
 }
 
-a:hover {
-    color: rgb(251, 109, 251); /* apply this color when hovering mouse over hyperlinks */
+a:hover, a:focus {
+    color: rgb(251, 109, 251); /* apply when hovering mouse over hyperlinks */
 }
 
 a:active {
-    color: red;
+    color: red; /* apply when user is clicking on links */
 }
 
 
