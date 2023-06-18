@@ -15,8 +15,7 @@
 /* 
 TODO: 
 - finish the side navigation menu - https://www.w3schools.com/howto/howto_js_sidenav.asp
-- make the trigram stay visible at the top left of the screen like the language selector)
-- change the style of the language buttons
+- change the style of the language buttons and hyperlinks
 */
 
 body {
@@ -35,7 +34,9 @@ header {
 .trigram {
     font-size: 1.6em;
     cursor: pointer;
-    
+    position: fixed;
+    top: 0;
+    left: 2%;
 }
 
 .language {
@@ -57,7 +58,7 @@ h1 {
     color: #fad6aa;
     padding: 0.1em;
     text-align: center;
-    margin-top: 5%;
+    margin: 0 5% 5%;
 }
 
 input, button {
