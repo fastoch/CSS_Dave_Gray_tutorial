@@ -13,9 +13,8 @@
 }
 
 /* 
-TODO: 
-- finish the side navigation menu - https://www.w3schools.com/howto/howto_js_sidenav.asp
-- change the style of the language buttons and hyperlinks
+TODO: finish the side navigation menu - https://www.w3schools.com/howto/howto_js_sidenav.asp
+TODO2: change the style of the language buttons and hyperlinks
 */
 
 body {
@@ -23,27 +22,34 @@ body {
     font-family:'Courier New', Courier, monospace;
     background-color: #25291C;
     color: #ffe4c4;
-    padding: 2%;
+    padding: 0 2% 2%;
+    margin: 8% 0 0 0;
 }
 
-header {
-    width: 90%;
-    margin: 0 2% 2% 0;
+.header_bar {
+    background-color: #25291C;
+    display: inline;
+    text-align: center;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
 }
 
 .trigram {
-    font-size: 1.6em;
-    cursor: pointer;
     position: fixed;
     top: 0;
     left: 2%;
+    cursor: pointer;
+    overflow-x: hidden;
+    font-size: 1.6em;
 }
 
 .language {
+    position: fixed;
     top: 0;
     right: 2%;
-    position: fixed;
-    z-index: 1;
     overflow-x: hidden;
     margin-top: 0;
     font-size: 0.8em;
@@ -52,13 +58,6 @@ header {
 a.language {
     text-decoration: none;
     color:#25291C;
-}
-
-h1 {
-    color: #fad6aa;
-    padding: 0.1em;
-    text-align: center;
-    margin: 0 5% 5%;
 }
 
 input, button {
