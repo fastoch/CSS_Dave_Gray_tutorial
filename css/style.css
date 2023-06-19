@@ -55,16 +55,24 @@ body {
 }
 
 a.lang-button, a.lang-button:visited {
-    color: #25291C;
+    color: #ffe4c4;
 }
 
 a.lang-button:hover {
-    color: black;
     font-size: 1.1rem;
+    color: #25291C;
 }
 
 button {
     font-size: 1rem;
+    background-color: #25291C;
+    border-radius: 10%;
+    padding: 2% 5%;
+    transition-duration: 0.2s;
+}
+
+button:hover {
+    background-color: #ffe4c4;
 }
 
 .container {
