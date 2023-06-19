@@ -75,6 +75,17 @@ button:hover {
     background-color: #ffe4c4;
 }
 
+.submit {
+    font-size: 1rem;
+    padding: 3px 6px;
+    color: #ffe4c4;
+}
+
+.submit:hover {
+    color: #25291C;
+    font-size: 1.1rem;
+}
+
 .container {
     width: 85%;
     padding: 0.5em;;
