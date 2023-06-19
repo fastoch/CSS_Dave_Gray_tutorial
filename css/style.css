@@ -50,8 +50,9 @@ body {
     top: 0;
     right: 2%;
     overflow-x: hidden;
-    margin-top: 0;
+    margin-top: 1%;
     font-size: 0.8em;
+    width: 15%;
 }
 
 a.lang-button, a.lang-button:visited {
@@ -109,6 +110,11 @@ button:hover {
 
 p {
     color: #ffe4c4;
+    margin: 1% 5%;
+}
+
+.footer {
+    margin: 0;
 }
 
 a {
@@ -128,4 +134,7 @@ a:active {
     color: red; /* apply when user is clicking on links */
 }
 
-
+ul {
+    list-style-image: url("../");
+    padding-left: 5%;
+}
