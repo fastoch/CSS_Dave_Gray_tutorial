@@ -14,7 +14,6 @@
 
 /* 
 TODO: finish the side navigation menu - https://www.w3schools.com/howto/howto_js_sidenav.asp
-TODO2: change the style of the language buttons and hyperlinks
 */
 
 body {
@@ -55,13 +54,17 @@ body {
     font-size: 0.8em;
 }
 
-a.language {
-    text-decoration: none;
-    color:#25291C;
+a.lang-button, a.lang-button:visited {
+    color: #25291C;
 }
 
-input, button {
-    font: inherit;
+a.lang-button:hover {
+    color: black;
+    font-size: 1.1rem;
+}
+
+button {
+    font-size: 1rem;
 }
 
 .container {
