@@ -19,6 +19,7 @@ TODO: finish the side navigation menu - https://www.w3schools.com/howto/howto_js
 body {
     font-size: 1.2rem;
     font-family:'Courier New', Courier, monospace;
+    line-height: 1.5;
     background-color: #25291C;
     color: #ffe4c4;
     padding: 0 2% 2%;
@@ -110,7 +111,7 @@ button:hover {
 
 p {
     color: #ffe4c4;
-    margin: 1% 5%;
+    margin: 1% 2%;
 }
 
 .footer {
@@ -134,7 +135,14 @@ a:active {
     color: red; /* apply when user is clicking on links */
 }
 
-ul {
-    list-style-image: url("../");
-    padding-left: 5%;
+ul li::marker {
+    content: '✔';
+    font-size: 1.2em;
+    color: limegreen;
+    line-height: 1.7;
 }
+
+li {
+    padding-left: 2%;
+}
+
