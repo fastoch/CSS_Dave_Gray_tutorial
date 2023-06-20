@@ -1,4 +1,4 @@
-/* The side navigation menu */
+/* The side navigation menu - https://www.w3schools.com/howto/howto_js_sidenav.asp */
 .sidenav {
     height: 100%; /* 100% Full-height */
     width: 0; /* 0 width - change this with JavaScript */
@@ -7,14 +7,42 @@
     top: 0; /* Stay at the top */
     left: 0; /* Position the side nav menu to the left */
     background-color: #25291C;
+    border-right: 1px solid hsl(33, 100%, 88%, 0.8);
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 }
 
-/* 
-TODO: finish the side navigation menu - https://www.w3schools.com/howto/howto_js_sidenav.asp
-*/
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #ffe4c4;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
 
 body {
     font-size: 1.2rem;
@@ -24,6 +52,10 @@ body {
     color: #ffe4c4;
     padding: 0 2% 2%;
     margin: 8% 0 0 0;
+}
+
+main {
+    padding: 2%;
 }
 
 .header_bar {
@@ -54,6 +86,15 @@ body {
     margin-top: 1%;
     font-size: 0.8em;
     width: 15%;
+}
+
+/* 
+TODO: make my website responsive for smaller screens
+*/
+@media screen and (max-width: 1000px) {
+    body {font-size: 1rem;}
+    .language {font-size: 0.6em;}
+    button a {font-size: 0.8rem;}
 }
 
 a.lang-button, a.lang-button:visited {
